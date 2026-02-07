@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags HTML</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(152, 152, 115);
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 3px;
+            margin: 10px;
+        }
+
+        header > nav{
+            background-color: lightgray;
+           box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.436);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding-right: 10px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: rgb(255, 255, 255);
+            padding: 3px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.47);
+        }
+
+        #esportes{
+            background-color: rgb(189, 185, 185);
+            padding: 3px;
+            margin: 5px;
+        }
+
+        #noticias{
+            background-color: rgb(189, 185, 185);
+            padding: 3px;
+            margin: 5px;
+        }
+
+        article > aside{
+            background-color: lightgray;
+            padding: 5px;
+            text-align: center;
+            margin: 0px;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 10px;
+        }
+    </style>    
+</head>
+<body>
+    <header>
+        <h1>Site Grouping tags</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="esportes">
+            <h2>Esportes</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est nisi, laboriosam quas enim nulla iusto quibusdam repellendus eligendi autem? Exercitationem odit quaerat beatae quam rerum nihil at, eligendi necessitatibus quis!</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam id, est vitae voluptas, saepe molestias beatae praesentium placeat rerum animi numquam consequatur accusamus fugiat perferendis nam repellat aliquid. Quisquam, laborum.</p>
+                <aside>Escrito por zé ninguém</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Guilherme</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>
