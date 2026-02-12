@@ -11,7 +11,8 @@
 
         table{
             width: 400px;
-            border-collapse: collapse;
+            border-collapse: collapse; 
+            height: 400px;
         }
 
         tr.linha{
@@ -21,6 +22,13 @@
         td{
             border: 1px solid black;
             padding: 5px;
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        .numero{
+            text-align: right;
+            vertical-align: top;
         }
     </style>
 </head>
@@ -30,12 +38,12 @@
         <tr class="linha">
             <td>A1</td>
             <td>B1</td>
-            <td>C1</td>
+            <td class="numero">C1</td>
         </tr>
         <tr>
             <td>A2</td>
             <td>B2</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
         <tr>
             <td>A3</td>
