@@ -29,6 +29,17 @@
             <input type="time" name="hora" id="ihora" required value="12:00">
         </p>
         <p>
+            <label for="itel">Telefone para contato:</label>
+            <input type="tel" name="tel" id="itel" pattern="\([0-9]{2}\) ([\s]) [0-9] {4,6}-[0,9] {4}" placeholder="(XX) XXXXX-XXXX">
+        </p>
+        <p><fieldset style="width: 100px;">
+            <legend>Sexo</legend>
+            <label for="isexmasc">Masculino</label>
+            <input type="radio" name="sexmasc" id="isexmasc">
+            <label for="isexfem">Feminino</label>
+            <input type="radio" name="sexfem" id="isexfem">
+        </fieldset></p>
+        <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
