@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" oninput="itotal.value = Number(ipreco.value) * Number(iquan.value)">
+        <p>
+            <label for="ipro">Produto:</label>
+            <input type="text" name="pro" id="ipro">
+        </p>
+        <p>
+            <label for="ipreco">Preço: R$</label>
+            <input type="number" name="preco" id="ipreco">
+        </p>
+        <p>
+            <label for="iquan">Quantidade:</label>
+            <input type="number" name="quan" id="iquan">
+        </p>
+        <label for="itotal">Total: R$</label>
+        <output id="itotal">0</output>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
