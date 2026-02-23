@@ -1,1 +1,65 @@
 @charset "UTF-8";
+
+@media print{
+
+    /*Imagem de fundo não funciona na impressora. background:url*/
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+
+    main{
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: 'Essa impressão foi feita por Guilherme';
+        font-weight: bold;
+        font-size: .5em;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#pc {display: none;}
+    img#print {display: block;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#pc {display: none;}
+    img#print {display: none;}
+    img#tv {display: none;}
+    }
+
+@media screen and (min-width: 992px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#tablet {display: none;}
+    img#pc {display: block;}
+    img#print {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#tablet {display: none;}
+    img#pc {display: none;}
+    img#print {display: none;}
+    img#tv {display: block;}
+}
