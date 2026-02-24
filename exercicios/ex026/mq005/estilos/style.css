@@ -42,14 +42,15 @@ span#menu:hover{
 }
 
 menu{
-    background-color: var(--cor2);
+    background-color: var(--cor4);
     display: none;
 }
 
 menu li{
     list-style-type: none;
     text-align: center;
-    border-top: 1px solid black
+    border-top: 1px solid black;
+    background-color: var(--cor2);
 }
 
 menu a{
