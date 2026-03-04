@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu flexbox</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: lightgray;
+        }
+
+        header {
+            background-color: gray;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+
+        header > h1 {
+            
+            flex: 0 0 200px;
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.509);
+        }
+
+        header > nav {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        nav a {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: black;
+            transition: background-color .5s;
+        }
+
+
+        main {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.412);
+        }
+
+        main p {
+            text-align: justify;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+         <nav>
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+            <a href="#">Opção 6</a>
+         </nav>   
+    </header>
+    <main>
+        <h2>Teste de Flexbox</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus magnam quibusdam cupiditate obcaecati totam voluptatum impedit dolor. Minus nam harum, aut magni, doloremque, voluptatum delectus eos fugit aspernatur tenetur earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus veritatis assumenda sunt odio dicta, perspiciatis eum nemo molestiae voluptates animi ex corporis maxime quis debitis veniam iure dolores repudiandae quia?</p>
+    </main>
+</body>
+</html>
